@@ -4,11 +4,11 @@ from pyrogram.types import Message
 from PIL import Image, ImageDraw, ImageFont
 from moviepy.editor import VideoFileClip
 import pytesseract
+from pyrogram import Client
 
-# Initialize the bot with your API ID, API Hash, and Bot Token
-api_id = "YOUR_API_ID"
-api_hash = "YOUR_API_HASH"
-bot_token = "YOUR_BOT_TOKEN"
+api_id = os.getenv("API_ID")
+api_hash = os.getenv("API_HASH")
+bot_token = os.getenv("BOT_TOKEN")
 
 app = Client("watermark_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
