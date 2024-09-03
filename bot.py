@@ -6,14 +6,14 @@ from moviepy.editor import VideoFileClip
 import pytesseract
 from pyrogram import Client
 
-api_id = os.getenv("API_ID")
-api_hash = os.getenv("API_HASH")
+api_id = int(os.getenv("API_ID" , 22505271 ))
+api_hash = os.getenv("API_HASH", "c89a94fcfda4bc06524d0903977fc81e")
 bot_token = os.getenv("BOT_TOKEN")
 
 app = Client("watermark_bot", api_id=api_id, api_hash=api_hash, bot_token=bot_token)
 
 # Configure paths and fonts for watermarking
-WATERMARK_TEXT = "© Your Watermark"
+WATERMARK_TEXT = "© DarkysEx"
 FONT_PATH = "/path/to/font.ttf"  # Ensure you have a TTF font file
 FONT_SIZE = 30
 
