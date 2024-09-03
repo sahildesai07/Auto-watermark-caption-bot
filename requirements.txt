@@ -1,0 +1,4 @@
+pyrogram
+pillow
+moviepy
+pytesseract
